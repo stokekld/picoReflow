@@ -42,6 +42,8 @@ log = logging.getLogger(__name__)
 #     log.exception("Could not initialize temperature sensor, using dummy values!")
 #     sensor_available = False
 
+sensor_available = True
+
 try:
     import RPi.GPIO as GPIO
     GPIO.setmode(GPIO.BCM)
